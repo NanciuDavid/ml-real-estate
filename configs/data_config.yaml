@@ -1,0 +1,25 @@
+# Data Configuration
+data:
+  raw_data_path: "data/raw"
+  processed_data_path: "data/processed"
+  
+  # Main datasets
+  apartments_file: "apartments excel.xlsx"
+  sales_file: "Real estate sales from nov 2024-apr 2025.xlsx"
+  localities_file: "localitati.csv"
+  ancpi_trends_file: "market_trends_vanzari_ancpi.csv"
+  
+  # Columns to drop in final processing
+  columns_to_drop: ["id", "url", "title", "additional information", "address"]
+  
+  # Target variable
+  target_column: "price"
+  
+  # Train/test split
+  test_size: 0.2
+  random_state: 42
+  
+  # Data cleaning parameters
+  outlier_quantiles:
+    lower: 0.01
+    upper: 0.99 
