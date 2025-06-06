@@ -10,7 +10,7 @@ data:
   ancpi_trends_file: "market_trends_vanzari_ancpi.csv"
   
   # Columns to drop in final processing
-  columns_to_drop: ["id", "url", "title", "additional information", "address"]
+  columns_to_drop: ["id", "url", "title", "additional information"]
   
   # Target variable
   target_column: "price"
